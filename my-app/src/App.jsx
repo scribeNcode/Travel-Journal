@@ -9,7 +9,7 @@ const entryElement = data.map((entry)=>{
      img = {entry.img}
      title = {entry.title}
      country = {entry.country} 
-     gogleMapsLink = {entry.googleMapsLink} 
+     googleMapsLink = {entry.googleMapsLink}
      dates = {entry.dates} 
      text = {entry.text}
     />
