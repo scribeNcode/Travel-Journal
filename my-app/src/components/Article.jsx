@@ -6,6 +6,8 @@ function Article(prop) {
       <div
         className="w-[100%] h-[12rem] max-w-[13rem] bg-cover bg-center rounded-sm"
         style={{ backgroundImage: `url(${prop.img?.src})` }}
+        aria-label={`Scenic view of ${prop.country}`}
+        role="img"
       ></div>
       <div className="">
         <div className="flex gap-3 pt-3  justify-center items-center md:justify-start  ">
@@ -17,6 +19,7 @@ function Article(prop) {
                 viewBox="0 0 7 10"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path
                   fill-rule="evenodd"
