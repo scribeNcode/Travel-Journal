@@ -3,7 +3,7 @@
 
 A clean, simple travel log. This project focuses on **reusability**, **responsive design**, and **creating components from an array of data**.
 
-View website[https://travel-journal-qdo6.vercel.app/] | I learnt something check it out[]
+[View website](https://travel-journal-qdo6.vercel.app/) | [I learnt something check it out](https://www.linkedin.com/pulse/why-your-flexbox-layout-breaks-large-screens-how-fix-adeyeye-i4d0e)
 
 ***
 
@@ -33,7 +33,7 @@ This Travel Journal is a frontend challenge designed to practice mapping over da
 ## Preview
 | Desktop Version | Mobile Version |
 | :---: | :---:|
-| ![Desktop View](public/laptop-view.png) | ![Mobile view](public/mobile-view.png)
+| ![Mobile View](my-app/public/mobile-view.png) | ![Desktop View](my-app/public/laptop-view.png)
 
 
 ##  Getting Started
@@ -41,6 +41,6 @@ This Travel Journal is a frontend challenge designed to practice mapping over da
 1. **Clone the repo**
    ```bash
    git clone [https://github.com/your-username/travel-journal.git](https://github.com/your-username/travel-journal.git)
-
 2. **Install dependencies
-3. **npm install
+ ```bash
+ npm install
