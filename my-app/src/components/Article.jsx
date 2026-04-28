@@ -2,7 +2,7 @@ import Marker from "../assets/Icons/Marker.svg";
 
 function Article(prop) {
   return (
-    <article className="w-[80%] flex flex-col md:flex-row justify-center items-center md:gap-[2rem] border-b border-gray-200 pb-10 last:border-b-0 first:m-12">
+    <article className="w-[80%] flex flex-col md:flex-row justify-center items-center md:gap-[2rem] border-b border-gray-200 pb-10 last:border-b-0 first:mt-28 ">
       <div
         className="w-[100%] h-[12rem] max-w-[13rem] bg-cover bg-center rounded-sm"
         style={{ backgroundImage: `url(${prop.img?.src})` }}
