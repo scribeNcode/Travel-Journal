@@ -2,13 +2,13 @@ import Marker from "../assets/Icons/Marker.svg";
 
 function Article(prop) {
   return (
-    <article className="w-[80%] flex flex-col md:flex-row justify-center items-center gap-4rem border-b border-gray-200 pb-10 last:border-b-0 first:m-12">
+    <article className="w-[80%] flex flex-col md:flex-row justify-center items-center md:gap-[2rem] border-b border-gray-200 pb-10 last:border-b-0 first:m-12">
       <div
-        className="w-[100%] h-[12rem] bg-cover bg-center rounded-sm"
+        className="w-[100%] h-[12rem] max-w-[13rem] bg-cover bg-center rounded-sm"
         style={{ backgroundImage: `url(${prop.img?.src})` }}
       ></div>
       <div className="">
-        <div className="flex gap-3 pt-3  justify-center items-center ">
+        <div className="flex gap-3 pt-3  justify-center items-center md:justify-start  ">
           <div className=" flex justify-center items-center gap-3 ">
             <div className=" flex justify-center items-center gap-1">
               <svg
@@ -25,13 +25,13 @@ function Article(prop) {
                   fill="#F55A5A"
                 />
               </svg>
-              <p className="  text-[0.6rem] font-light flex justify-center items-center">
+              <p className="md:text-[0.7rem] text-[0.6rem] font-light flex justify-center items-center">
                 {prop.country}
               </p>
             </div>
 
             <a
-              className=" underline font-league flex justify-center items-center font-light text-[0.6rem] text-text"
+              className=" underline font-league flex justify-center items-center font-light text-[0.6rem] text-text md:text-[0.7rem]"
               href={prop.googleMapsLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -40,13 +40,15 @@ function Article(prop) {
             </a>
           </div>
         </div>
-        <h2 className="font-[700] text-[1.2rem] text-center mt-0 pb-4">
+        <h2 className="  md:text-start font-[700] text-[1.2rem] text-center mt-0 pb-4">
           {prop.title}
         </h2>
-        <time className=" block text-center font-bold font-medium text-[0.8rem] mb-1.5">
+        <time className="md:text-start block text-center font-bold font-medium text-[0.8rem] mb-1.5">
           {prop.dates}
         </time>
-        <p className="text-center text-[0.8rem] font-light">{prop.text}</p>
+        <p className="text-center md:text-start text-[0.8rem] font-light">
+          {prop.text}
+        </p>
       </div>
     </article>
   );
