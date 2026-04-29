@@ -3,12 +3,13 @@ import Marker from "../assets/Icons/Marker.svg";
 function Article(prop) {
   return (
     <article className="w-[80%] max-w-[850px]  flex flex-col md:flex-row justify-center items-center md:gap-[2rem] border-b border-gray-200 pb-10 last:border-b-0 first:mt-28 ">
-      <div
-        className="w-[100%] h-[12rem] max-w-[13rem] bg-cover bg-center rounded-sm"
-        style={{ backgroundImage: `url(${prop.img?.src})` }}
-        aria-label={`Scenic view of ${prop.country}`}
-        role="img"
-      ></div>
+
+      <img
+        src={prop.img?.src}
+        alt={prop.img?.alt}
+        className="w-[100%] h-[12rem] max-w-[13rem] object-cover rounded-sm"
+      />
+
       <div className="">
         <div className="flex gap-3 pt-3  justify-center items-center md:justify-start  ">
           <div className=" flex justify-center items-center gap-3 ">
